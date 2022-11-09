@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./index.css"></style>
+  </head>
+  <body>
+    <form action="" method="POST" name="login">
+      <h3>First Name: </h3>
+      <input required type="text" id="fname" name="fname">
+      <br>
+      <h3>Last Name: </h3> 
+      <input required type="text" id="lname" name="lname">
+      <br>
+      <h3>Email: </h3>
+      <input type="text" id="email" name="email" onsubmit="return validateEmail()">
+      <br>
+      <h3>Phone: </h3>
+      <input type="text" id="phone" name="phone">
+      <br>
+      <input type="submit" id="submit" name="submit" value="submit">
+    </form>
+  </body>
+</html>
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script>
+  function validateEmail(){
+    let valid = true;
+    let alertMessage ="";
+    let x = document.forms["login"][email].value;
+    if(!x.length > 0){
+      alertMessage += " Email must be filled out.";
+      valid = false;
+    }
+    if(!x.contains("@")){
+      alertMessage += " Email must contain an @ symbol."
+      valid = false;
+    } 
+    if (!(x.substring(x.indexOf("@")).length > 1)){
+      alertMessage += " @ symbol must be followed by atleast 1 character."
+      valid = false;
+    }
+    if(!valid){
+      alert(alertMessage);
+    }
+    return valid;
+  }
+</script>
