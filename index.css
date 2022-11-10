@@ -35,8 +35,11 @@ html{
   text-align: right;
 }
 
-#sectionBreak{
-  line-height: 75px;
+#sectionbreak{
+  height: 1px;
+  background-color: grey;
+  margin-bottom: 10px;
+  max-width: fit-content;
 }
 
 #homepic{
@@ -45,4 +48,12 @@ html{
   height: 200;
   margin-left: 50px;
   margin-right: 50px;
+}
+
+#buttons{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
 }
