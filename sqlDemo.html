@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <button id="returnLink"><a href="index.html">Home</a></button>
+    </head>
+    <h1>SQL forms and reports via PHP</h1>
+    <p class="title">Below is an html form which submits to a php file. In the php file, there is an sql query, which sends then given info below to a database.<br>
+    Feel free to try it out!<p>
+    <form action="addToDatabase.php" method="post" name="addToDatabase">
+        <p>First Name*:</p>
+        <input required type="text" id="fname">
+        <p>Last Name*:</p>
+        <input required ype="text" id="lname">
+        <p>Email*:</p>
+        <input required type="email" id="email">
+        <p>Phone Number*:</p>
+        <input required type="text" id="tel">
+        <br><br>
+        <input type="submit" id="submit" value="submit!">
+    </form>
+    <br>
+    <h4>Below you can request a form which will list every record put into this database so far</h4>
+    <button>Request form!</button>
+</html>

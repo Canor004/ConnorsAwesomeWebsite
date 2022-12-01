@@ -57,3 +57,19 @@ html{
   flex-direction: row;
   margin-bottom: 50px;
 }
+
+#returnLink{
+  float: right;
+  align-items: right;
+  box-shadow: 5px 5px lightblue;
+  height: 30px;
+  width: 75px;
+  background-color: orange;
+  color: black;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.title{
+  font-size: 16px;
+}

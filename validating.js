@@ -2,8 +2,6 @@ function validateEmail() {
     let valid = true;
     let alertMessage = "";
     let x = document.getElementById("email").value;
-    console.log(x.length);
-    console.log(x.includes("@"));
     if (!x.length > 0) {
         alertMessage += " Email must be filled out.";
         valid = false;
