@@ -1,12 +1,20 @@
-/*$(document).ready( () => {
-    const $showpicture = $('#showMe');
-    const $showButton = $('#showButton');
-    $showpicture.hide();
-    $showButton.on('click', () => {
-        $showpicture.slideDown();
+$(document).ready( () => {
+    const $jquery = $('#Jquery');
+    $jquery.on('mouseenter', () => {
+        $jquery.animate({height: '+=20px',
+                       width: '+=20px',
+                       fontSize: '+=3px'});
     })
+    $jquery.on('mouseleave', () =>{
+        $jquery.animate({height: '-=20px',
+                       width: '-=20px',
+                       fontSize: '-=3px'});
+    })
+
+    
 })
 
+/*
 function loadDoc(){
     console.log(document.getElementById("ajaxTest"));
     const rq = new XMLHttpRequest();
