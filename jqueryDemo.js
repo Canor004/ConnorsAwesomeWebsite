@@ -82,6 +82,16 @@ $(document).ready( () => {
                        width: '-=20px',
                        fontSize: '-=3px'});
     })
+
+        const $boomPic = $('#boomPic');
+        const $boomBtn = $('#boomBtn');
+        const boom = new Audio("boom.mp3");
+        $boomPic.hide();
+        $boomBtn.on("click", () => {
+            boom.play();
+            $boomPic.toggle();
+        });
+        console.log("lmaO");
 })
 
 
@@ -108,3 +118,8 @@ function loadDoc(){
     rq.open('GET', 'something.txt', true);
     rq.send();
 };
+
+function showBoom() {
+
+}
+
