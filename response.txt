@@ -1,0 +1,4 @@
+1. Server connection established. <br>
+2. Request received. <br>
+3. Processing request. <br>
+4. Request finished and response is ready.

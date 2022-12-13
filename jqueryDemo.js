@@ -119,7 +119,14 @@ function loadDoc(){
     rq.send();
 };
 
-function showBoom() {
-
+function printPhases() {
+    const rq = new XMLHttpRequest();
+    rq.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("phaseWords").innerHTML = this.responseText;
+            }
+        }
+    rq.open('GET', 'response.txt', true);
+    rq.send();
 }
 
